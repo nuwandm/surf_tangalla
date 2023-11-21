@@ -1,0 +1,439 @@
+body {
+    padding: 0px !important;
+    font-family: sans-serif !important;
+}
+
+.nav-content {
+    display: flex;
+    position: absolute !important;
+    top: 10px;
+    z-index: 2;
+    width: 100%;
+    justify-content: space-between !important;
+    padding: 0px 30px;
+
+    .brand {
+        color: white !important;
+        margin-top:5px;
+        font-size: 40px;
+    }
+    .nav-item a {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}
+
+.carousel-inner {
+    height: 100vh;
+    .carousel-item img{
+        object-fit: cover;
+        height: 100vh !important;
+    }
+}
+
+.hero-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    color: white;
+
+    .hero-quote{
+        font-size : 80px;
+        font-weight: 600;
+    }
+    .hero-quote-wrapper {
+        border-left: solid;
+        border-width: 0px 0px 0px 5px;
+        border-color: #00A7C7;
+        padding: 0px 0px 0px 30px; 
+    }
+    .hero-text{
+        padding: 0px 0px 0px 30px;  
+        
+        .hero-action {
+            color: white;
+            border: 2px solid #00A7C7;
+        }
+    }
+    .hero-text p {
+        margin-top: 50px;
+    }
+}
+.what-surf-content img{
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+.lead {
+    margin-top: 60px;
+    text-align: center
+}
+.description-topic-line {
+    margin-top: 50px !important;
+    border: 1px solid #00A7C7;
+    width: 15%;
+    margin: 0 auto; /* Center horizontally */
+    display: block; /* Ensure the <hr> is a block-level element */
+}
+.description-heading {
+    text-align: center;
+}
+.offer-header h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.offer-header p {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+/* .hero-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .hero-item{
+      background-color: #00A7C7;
+      padding: 20px;
+      opacity: 0.7;
+  }
+} */
+
+.flip-box {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box-back img {
+      margin-top: 20%;
+  }
+
+  .flip-box-back p {
+    margin: 20px;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-box-front img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+  .flip-box-front p {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  .flip-box-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-element-wrapper .col-md-4 {
+    margin-bottom: 25px;
+  }
+
+  .experience-wrapper {
+
+    .attached-image-wrapper{
+        position: absolute;
+    }
+    .img {
+        background-image: url(../assets/img/Carsoul\ boy\ suef\ close2.jpg);
+        height: 30vh;
+        width: 100%;
+        background-size: cover;
+        object-fit: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .overlay-content {
+        position: relative;
+        top: 0px;
+        /* background-color: #00A7C7; */
+        height: 30vh;
+        background-color: rgba(0, 167, 199, 0.6);
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        .row{
+            margin-top: 9vh;
+        }
+        .row div {
+            margin-bottom: 20px;
+        }
+        .title{ 
+            font-size: 45px;
+            margin-bottom: 0px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+    }
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav-content {
+        .brand{
+            font-size: 30px;
+        }
+    }
+
+    .hero-wrapper{
+        top: 45%;
+        .hero-quote {
+            font-size: 60px;
+        }
+    } 
+    
+    .experience-wrapper {
+        .img{
+            height: 65vh;
+        }
+        .overlay-content {
+            height: 65vh;
+            font-size: 12px;
+            .row{
+                margin-top: 7vh;
+            }
+             .title{ 
+                font-size: 25px;
+            }
+        }
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hero-wrapper{
+        top: 40%;
+        .hero-quote {
+            font-size: 55px;
+        }
+    }
+    
+    .experience-wrapper {
+
+        .overlay-content {
+            font-size: 12px;
+            .row{
+                margin-top: 4vh;
+            }
+             .title{ 
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hero-wrapper{
+        top: 30%;
+        .hero-quote {
+            font-size: 60px;
+        }
+    }
+    .experience-wrapper {
+
+        .overlay-content {
+            font-size: 14px;
+            .row{
+                margin-top: 9vh;
+            }
+             .title{ 
+                font-size: 45px;
+            }
+        }
+    }   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .hero-wrapper{
+        top: 25%;
+        .hero-quote {
+            font-size: 75px;
+        }
+    }   
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .hero-wrapper{
+        top: 25%;
+        .hero-quote {
+            font-size: 90px;
+        }
+    } 
+}
+
+
+/* footer style */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #333;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
